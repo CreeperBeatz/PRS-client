@@ -1,0 +1,26 @@
+﻿<Window x:Class="SOAPapp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SOAPapp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="HelloWorldLabel" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="31" Width="201"/>
+        <Button x:Name="HelloWorldButton" Content="Hello World" HorizontalAlignment="Left" Margin="10,46,0,0" VerticalAlignment="Top" Width="100" Click="HelloWorldButton_Click"/>
+        <Button x:Name="FarenheitToCelsiusButton" Content="Convert to Celsius" HorizontalAlignment="Left" Margin="10,154,0,0" VerticalAlignment="Top" Width="120" Click="FarenheitToCelsiusButton_Click"/>
+        <TextBox x:Name="farenheit_textbox" HorizontalAlignment="Left" Margin="10,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="convertedToCelsiusLabel" Content="0C" HorizontalAlignment="Left" Margin="10,191,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="celsius_textbox" HorizontalAlignment="Left" Margin="156,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="CelsiusToFarenheitButton" Content="Convert to Farenheit" HorizontalAlignment="Left" Margin="156,154,0,0" VerticalAlignment="Top" Width="120" Click="CelsiusToFarenheitButton_Click"/>
+        <Label x:Name="convertedToFarenheitLabel" Content="0F" HorizontalAlignment="Left" Margin="156,186,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="json_name_textbox" HorizontalAlignment="Left" Margin="528,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="LoadJsonButton" Content="Load JSON" HorizontalAlignment="Left" Margin="528,46,0,0" VerticalAlignment="Top" Width="120" Click="LoadJsonButton_Click"/>
+        <TextBlock x:Name="Json_textblock" HorizontalAlignment="Left" Margin="400,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Height="323" Width="376"/>
+        <Label Content="F to C" HorizontalAlignment="Left" Margin="36,100,0,0" VerticalAlignment="Top" Width="68"/>
+        <Label Content="C to F" HorizontalAlignment="Left" Margin="182,100,0,0" VerticalAlignment="Top" Width="68"/>
+        <Label Content="JSON file name" HorizontalAlignment="Left" Margin="543,-3,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
